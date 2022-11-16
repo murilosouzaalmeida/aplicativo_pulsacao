@@ -56,11 +56,11 @@ class _PulseButtonState extends State<PulseButton>
     var color = Colors.white;
 
     if (widget.temperatura < 33) {
-      color = Colors.blue;
+      color = Colors.orange;
     } else if (widget.temperatura > 33 && widget.temperatura < 66) {
-      color = Colors.green;
+      color = Color.fromARGB(255, 255, 72, 0);
     } else if (widget.temperatura > 66) {
-      color = Colors.red;
+      color = Color.fromARGB(255, 167, 11, 0);
     }
 
     return AnimatedBuilder(
